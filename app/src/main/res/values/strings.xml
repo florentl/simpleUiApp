@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Simple UI Quest</string>
+    <string name="hello_txt">Welcome to the Wild Code School</string>
+    <string name="wanabe">Yes, I want to be a Wilder</string>
+    <string name="first_name">First name</string>
+    <string name="last_name">Last name</string>
+    <string name="accept">Accept</string>
+    <string name="fillFirstLastName">Please fill your firstname and lastname</string>
+    <string name="congrats">Congratulation</string>
+</resources>
