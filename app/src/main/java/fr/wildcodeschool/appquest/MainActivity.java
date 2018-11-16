@@ -56,6 +56,8 @@ public class MainActivity extends AppCompatActivity {
                   if(!isChecked) {
                       firstNameINput.setText("");
                       lastNameInput.setText("");
+                  }else {
+                      congratTextView.setText("");
                   }
             }
         });
