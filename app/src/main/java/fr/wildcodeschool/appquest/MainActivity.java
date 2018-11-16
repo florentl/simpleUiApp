@@ -20,7 +20,7 @@ public class MainActivity extends AppCompatActivity {
         final EditText firstNameINput = findViewById(R.id.firstName);
         final EditText lastNameInput = findViewById(R.id.lastName);
         final CheckBox myCb = findViewById(R.id.checkBox);
-
+        final TextView congratTextView = findViewById(R.id.welcomeMsg);
         final Button button = findViewById(R.id.submit_btn);
         button.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
@@ -34,7 +34,6 @@ public class MainActivity extends AppCompatActivity {
                     Toast toast = Toast.makeText(context, msg, duration);
                     toast.show();
                 } else {
-                    TextView congratTextView = findViewById(R.id.welcomeMsg);
                     congratTextView.setText(context.getString(R.string.congrats));
                     congratTextView.append(" " + firstName + " " + lastName);
                     firstNameINput.setText("");
@@ -42,6 +41,7 @@ public class MainActivity extends AppCompatActivity {
                     myCb.setChecked(false);
                     firstNameINput.setEnabled(false);
                     lastNameInput.setEnabled(false);
+                    button.setEnabled(false);
                 }
             }
         });
@@ -51,6 +51,8 @@ public class MainActivity extends AppCompatActivity {
             public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
                   findViewById(R.id.firstName).setEnabled(isChecked);
                   findViewById(R.id.lastName).setEnabled(isChecked);
+                  button.setEnabled(isChecked);
+
                   if(!isChecked) {
                       firstNameINput.setText("");
                       lastNameInput.setText("");

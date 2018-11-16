@@ -66,6 +66,7 @@
         android:layout_marginStart="8dp"
         android:layout_marginLeft="8dp"
         android:layout_marginTop="8dp"
+        android:enabled="false"
         android:text="@string/accept"
         android:textColor="@android:color/darker_gray"
         app:layout_constraintStart_toStartOf="parent"
@@ -73,9 +74,10 @@
 
     <TextView
         android:id="@+id/welcomeMsg"
-        android:layout_width="248dp"
-        android:layout_height="24dp"
+        android:layout_width="377dp"
+        android:layout_height="23dp"
         android:layout_margin="8dp"
+        android:gravity="center_vertical|center_horizontal"
         android:textColor="@color/design_default_color_primary"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
